@@ -1,1 +1,1 @@
-token = 'sya_token-aqui'
+token = 'sua_token-aqui'
