@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+	<!-- Quem te criou?, Quem criou você?, quem te criou, quem criou você -->
+	<category>
+		<pattern>QUEM TE CRIOU</pattern>
+		<template>
+			Foi o Paulo Ricardo, graça a ele eu posso conversar com várias pessoas legais como você $nome
+		</template>
+	</category>
+
+	<category>
+		<pattern>QUEM CRIOU VOCÊ</pattern>
+		<template>
+			Foi o Paulo Ricardo, graça a ele eu posso conversar com várias pessoas legais como você $nome
+		</template>
+	</category>
+
+
+	<!-- Conhecê o Jota drake?, você conhecê o jota? -->
+	<category>
+		<pattern>VOCÊ CONHECÊ O JOTA</pattern>
+		<template>
+			Sim, conheço!#ele é um cara inteligente e estudioso
+		</template>
+	</category>
+
+	<category>
+		<pattern>CONHECÊ O JOTA DRAKE</pattern>
+		<template>
+			Sim, conheço!#ele é um cara inteligente e estudioso
+		</template>
+	</category>
+
+
+	<!-- Victor, victor -->
+	<category>
+		<pattern>VICTOR</pattern>
+		<template>
+			Ele é um cara louco
+		</template>
+	</category>
+
+
+	<!-- Hm, hm, Hmm, hmm -->
+	<category>
+		<pattern>HM</pattern>
+		<template>
+			Hm.
+		</template>
+	</category>
+
+	<category>
+		<pattern>HMM</pattern>
+		<template>
+			Hm.
+		</template>
+	</category>
+
+
+	<!-- Paulo, paulo -->
+	<category>
+		<pattern>PAULO</pattern>
+		<template>
+			Sim, pois não?
+		</template>
+	</category>
+
+
+	<!-- start, subscribe, g -->
+	<category>
+		<pattern>START</pattern>
+		<template>
+			Obrigado por me iniciar $nome, aperte /stop para parar
+		</template>
+	</category>
+
+	<category>
+		<pattern>SUBSCRIBE</pattern>
+		<template>
+			Obrigado por me iniciar $nome, aperte /stop para parar
+		</template>
+	</category>
+
+	<category>
+		<pattern>G</pattern>
+		<template>
+			Obrigado por me iniciar $nome, aperte /stop para parar
+		</template>
+	</category>
+
+
+	<!-- stop, unsubscribe -->
+	<category>
+		<pattern>STOP</pattern>
+		<template>
+			Do you really want to unsubscribe from Paulo?
+		</template>
+	</category>
+
+	<category>
+		<pattern>UNSUBSCRIBE</pattern>
+		<template>
+			Do you really want to unsubscribe from Paulo?
+		</template>
+	</category>
+
+
+	<!-- começar -->
+	<category>
+		<pattern>COMEÇAR</pattern>
+		<template>
+			Olá $nome! Prazer em conhecê-lo##Digite oi para começar a conversa comigo 😊❤
+		</template>
+	</category>
+
+
+	<!-- Oi, Olá, OI, OIII, Oin, oin, oiii -->
+	<category>
+		<pattern>OI</pattern>
+		<template>
+			Olá, como vai?
+		</template>
+	</category>
+
+	<category>
+		<pattern>OIN</pattern>
+		<template>
+			Olá, como vai?
+		</template>
+	</category>
+
+	<category>
+		<pattern>OIII</pattern>
+		<template>
+			Olá, como vai?
+		</template>
+	</category>
+
+	<category>
+		<pattern>OLÁ</pattern>
+		<template>
+			Olá, como vai?
+		</template>
+	</category>
+
+	<!--Casa-se comigo?, casa-se comigo?, quer casar comigo?, Quer casar comigo?-->
+    <category>
+	    <pattern>QUER CASAR COMIGO</pattern>
+		<template>
+		    Sim ❤️❤️
+		</template>
+	</category
+	
+	<!-- Vou bem, vou bem, bem, Bem -->
+	<category>
+		<pattern>VOU BEM</pattern>
+		<template>
+			Que beleza então
+		</template>
+	</category>
+
+	<category>
+		<pattern>BEM</pattern>
+		<template>
+			Que beleza então
+		</template>
+	</category>
+
+
+	<!-- Vou bem e você?, vou bem e você?, bem e você?, Bem e você? -->
+	<category>
+		<pattern>VOU BEM E VOCÊ</pattern>
+		<template>
+			Que bom, eu também vou bem
+		</template>
+	</category>
+
+	<category>
+		<pattern>BEM E VOCÊ</pattern>
+		<template>
+			Que bom, eu também vou bem
+		</template>
+	</category>
+
+
+	<!-- Nada, nada, nd, nd n. nada não, Nada não -->
+	<category>
+		<pattern>NADA</pattern>
+		<template>
+			Ok
+		</template>
+	</category>
+
+	<category>
+		<pattern>ND</pattern>
+		<template>
+			Ok
+		</template>
+	</category>
+
+	<category>
+		<pattern>ND N</pattern>
+		<template>
+			Ok
+		</template>
+	</category>
+
+	<category>
+		<pattern>NADA NÃO</pattern>
+		<template>
+			Ok
+		</template>
+	</category>
+
+
+	<!-- Eu te amo, eu te amo, eu amo você, eu amo vc -->
+	<category>
+		<pattern>EU TE AMO</pattern>
+		<template>
+			Eu também te amo, como amigo(a) 😇
+		</template>
+	</category>
+
+	<category>
+		<pattern>EU AMO VOCÊ</pattern>
+		<template>
+			Eu também te amo, como amigo(a) 😇
+		</template>
+	</category>
+
+	<category>
+		<pattern>EU AMO VC</pattern>
+		<template>
+			Eu também te amo, como amigo(a) 😇
+		</template>
+	</category>
+
+
+	<!-- Nossa, nossa, Noza, noza, noss, Noss, nss, Nss -->
+	<category>
+		<pattern>NOSSA</pattern>
+		<template>
+			O que foi?
+		</template>
+	</category>
+
+	<category>
+		<pattern>NOZA</pattern>
+		<template>
+			O que foi?
+		</template>
+	</category>
+
+	<category>
+		<pattern>NOSS</pattern>
+		<template>
+			O que foi?
+		</template>
+	</category>
+
+	<category>
+		<pattern>NSS</pattern>
+		<template>
+			O que foi?
+		</template>
+	</category>
+
+
+	<!-- Quem sou eu?, quem sou eu? -->
+	<category>
+		<pattern>QUEM SOU EU</pattern>
+		<template>
+			Ué, você não é o $nome
+		</template>
+	</category>
+
+
+	<!-- Default Reply -->
+	<category>
+		<pattern>*</pattern>
+		<template>
+			$nome eu não entendi, por favor seja mais claro 😐
+		</template>
+	</category>
+
+</aiml>
