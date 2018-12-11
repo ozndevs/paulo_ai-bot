@@ -1,1 +1,1 @@
-token = '637696145:AAFNBxYvGWdJq6-Q8v1lixcIuNY9_Sgycyc'
+token = 'sya_token-aqui'
