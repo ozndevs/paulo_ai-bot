@@ -1,14 +1,22 @@
-#Servidor<br>
-$sudo apt-get update<br>
-$sudo apt-get upgrade<br>
-$sudo apt-get install python3<br>
-$sudo apt instal python-pip3<br><br>
+# Servidor
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install python3
+sudo apt instal python-pip3
+```
 
-#amanobot<br>
-$pip3 install pyaiml<br><br>
+# Módulos
+```bash
+sudo pip3 install python-aiml amanobot
+```
 
-#run terminal:<br>
-$python3 bot.py<br><br>
+# run terminal:
+```bash
+python3 bot.py
+```
 
-#run em nohup:<br>
-$nohup python3 bot.py<br><br>
+# run em nohup:
+```bash
+nohup python3 bot.py
+```
