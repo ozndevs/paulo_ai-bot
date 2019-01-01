@@ -1,1 +1,1 @@
-token = 'sua_token-aqui'
+TOKEN = 'insira_seu_token_aqui'

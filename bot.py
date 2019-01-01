@@ -8,7 +8,7 @@ import aiml
 import config
 
 
-bot = amanobot.Bot(config.token)
+bot = amanobot.Bot(config.TOKEN)
 
 k = aiml.Kernel()
 k.learn('aiml/*.aiml')

@@ -1,14 +1,15 @@
 # Servidor
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install python3
-sudo apt instal python-pip3
+sudo apt update
+sudo apt upgrade
+sudo apt install python3
+sudo apt instal python3-pip
+sudo apt install python3-venv
 ```
 
 # Módulos
 ```bash
-sudo pip3 install python-aiml amanobot
+pip3 install -r requirements.txt
 ```
 
 # run terminal:
