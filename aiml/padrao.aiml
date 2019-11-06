@@ -68,44 +68,6 @@
 	</category>
 
 
-	<!-- start, subscribe, g -->
-	<category>
-		<pattern>START</pattern>
-		<template>
-			Obrigado por me iniciar $nome, aperte /stop para parar
-		</template>
-	</category>
-
-	<category>
-		<pattern>SUBSCRIBE</pattern>
-		<template>
-			Obrigado por me iniciar $nome, aperte /stop para parar
-		</template>
-	</category>
-
-	<category>
-		<pattern>G</pattern>
-		<template>
-			Obrigado por me iniciar $nome, aperte /stop para parar
-		</template>
-	</category>
-
-
-	<!-- stop, unsubscribe -->
-	<category>
-		<pattern>STOP</pattern>
-		<template>
-			Do you really want to unsubscribe from Paulo?
-		</template>
-	</category>
-
-	<category>
-		<pattern>UNSUBSCRIBE</pattern>
-		<template>
-			Do you really want to unsubscribe from Paulo?
-		</template>
-	</category>
-
 
 	<!-- começar -->
 	<category>
