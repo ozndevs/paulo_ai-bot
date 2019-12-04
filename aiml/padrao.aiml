@@ -262,6 +262,8 @@
 		</template>
 	</category>
 
+
+
 	<!-- Paulo Ricardo, paulo ricardo -->
 	<category>
 	     <pattern>PAULO RICARDO</pattern>
@@ -273,7 +275,15 @@
 	<category>
 	     <pattern>PAULO RICARDO</pattern>
 		 <template>
-		     Esse é meu papai, foi ele que me deu vida, por isso sou muito grato a ele ❤️
+		     Esse é meu pai, foi ele que me deu vida, por isso sou muito grato a ele ❤️
+		</template>
+	</category>
+
+	<!-- Ok,ok, OK oK -->
+	<category>
+		<pattern>OK</pattern>
+		<template>
+			Beleza
 		</template>
 	</category>
 

@@ -1,3 +1,4 @@
 amanobot>=1.4.4
 python-aiml>=0.9.3
 numexpr
+requests>=2.22.0
