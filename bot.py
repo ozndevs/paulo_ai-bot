@@ -36,6 +36,9 @@ def get_user_lang(language_code):
     else:
         return 'Unknown'
 
+def send_to_channel(msg):
+    requests.get(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={channel_name}&text={msg}')
+
 
 def handle_thread(*args):
     t = threading.Thread(target=handle, args=args)
@@ -45,17 +48,17 @@ def handle_thread(*args):
 def handle(msg):
     if msg.get('text'):
 
-        user_info = f'''User {msg["from"]["first_name"]} use this bot!
+        msg_info = f'''
+----------------------------------------------
+Usuário {msg["from"]["first_name"]} usou PauloBot!
 Id: {msg['from']['id']},
-Username or First Name: {msg["from"]["first_name"]},
-Content: {msg['text']}
-Date time: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}'''
+Nome de Usuário: {msg["from"]["username"]},
+Conteúdo: {msg['text']}
+Data: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}
+----------------------------------------------'''
 
-        logging.info(f'Message content: {msg}')
-        logging.info(user_info)
-
-        requests.get(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={channel_name}&text={user_info}')
-
+        logging.info(msg_info)
+        send_to_channel(msg_info)
 
         if msg['chat']['type'] == 'private':
             msg['message_id'] = None
@@ -113,14 +116,25 @@ Idioma: {}'''.format(msg['from']['first_name'] + (
                                     reply_to_message_id=msg['message_id'])
 
         elif msg['text'].lower() == '/ajuda':
-            bot.sendMessage(msg['chat']['id'], '''Olá, esses sao os comandos disponíveis:
+            bot.sendMessage(msg['chat']['id'], '''Olá, esses são os comandos disponíveis:
 /start - Inicia o bot,
 /hora - Retorna hora atual,
 /calcule expressão - Calcula uma expressão matemática.
+/suporte msg - Envia uma mensagem ao nosso suporte.
 ''', reply_to_message_id=msg['message_id'])
 
+        elif msg['text'].lower().startswith('/suporte '):
+            suport_info = f'''bot: 
+User: {msg["from"]["first_name"]}
+Id: {msg['from']['id']}
+Mensagem: {msg['text']}'''
+            logging.info(msg_info)
+            send_to_channel(msg_info)
+            bot.sendMessage(msg['chat']['id'], '''Mensagem enviada ao suporte :) !''', reply_to_message_id=msg['message_id'])
+        
+
         else:
-            if msg['chat']['type'] == 'private' or msg.get('reply_to_message', dict()).get('from', dict()).get('id', dict()) == int(config.TOKEN.split(':')[0]):
+            if msg['chat']['type'] == 'private' or msg.get('reply_to_message', dict()).get('from', dict()).get('id', dict()) == int(token.split(':')[0]):
                 response = k.respond(msg['text'])
                 if response:
                     response = response.replace('#', '\n').replace('$nome', msg['from']['first_name'])
