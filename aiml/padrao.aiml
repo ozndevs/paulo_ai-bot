@@ -77,8 +77,22 @@
 		</template>
 	</category>
 
+	<!-- Melhor grupo, melhor grupo, MELHOR GRUPO, qual é o melhor grupo?, Qual é o melhor grupo?, QUAL É O MELHOR GRUPO? -->
+	<category>
+		<pattern>MELHOR GRUPO</pattern>
+		<template>
+			O melhor grupo é o @parangolehhh entre la e se divirta :)
+		</template>
+	</category>
 
-	<!-- Oi, Olá, OI, OIII, Oin, oin, oiii -->
+	<category>
+		<pattern>QUAL É MELHOR GRUPO</pattern>
+		<template>
+			O melhor grupo é o @parangolehhh entre la e se divirta :)
+		</template>
+	</category>
+
+	<!-- Oi, Olá, OI, OIII, Oin, oin, oiii, olá, ola, Ola-->
 	<category>
 		<pattern>OI</pattern>
 		<template>
@@ -107,12 +121,19 @@
 		</template>
 	</category>
 
+<category>
+		<pattern>OLA</pattern>
+		<template>
+			Olá, como vai?
+		</template>
+	</category>
+
 
 	<!-- Casa-se comigo?, casa-se comigo?, quer casar comigo?, Quer casar comigo? -->
-    <category>
-	    <pattern>QUER CASAR COMIGO</pattern>
+	<category>
+		<pattern>QUER CASAR COMIGO</pattern>
 		<template>
-		    Sim ❤️❤️
+			Sim ❤️❤️
 		</template>
 	</category>
 
@@ -242,23 +263,23 @@
 
 	<!-- Feliz natal, feliz natal, feliz natal paulo, Feliz Natal Paulo -->
 	<category>
-	     <pattern>FELIZ NATAL</pattern>
+		 <pattern>FELIZ NATAL</pattern>
 		 <template>
-		     Feliz natal $nome🎅
+			 Feliz natal $nome🎅
 		</template>
 	</category>
 
 	<category>
-	     <pattern>FELIZ NATAL PAULO</pattern>
+		 <pattern>FELIZ NATAL PAULO</pattern>
 		 <template>
-		     Feliz natal $nome🎅
+			 Feliz natal $nome🎅
 		</template>
 	</category>
 
 	<category>
-	     <pattern>PAULO FELIZ NATAL</pattern>
+		 <pattern>PAULO FELIZ NATAL</pattern>
 		 <template>
-		     Feliz natal $nome🎅
+			 Feliz natal $nome🎅
 		</template>
 	</category>
 
@@ -266,16 +287,16 @@
 
 	<!-- Paulo Ricardo, paulo ricardo -->
 	<category>
-	     <pattern>PAULO RICARDO</pattern>
+		 <pattern>PAULO RICARDO</pattern>
 		 <template>
-		     Esse é meu papai, foi ele que me deu vida, por isso sou muito grato a ele ❤️
+			 Esse é meu papai, foi ele que me deu vida, por isso sou muito grato a ele ❤️
 		</template>
 	</category>
 
 	<category>
-	     <pattern>PAULO RICARDO</pattern>
+		 <pattern>PAULO RICARDO</pattern>
 		 <template>
-		     Esse é meu pai, foi ele que me deu vida, por isso sou muito grato a ele ❤️
+			 Esse é meu pai, foi ele que me deu vida, por isso sou muito grato a ele ❤️
 		</template>
 	</category>
 
@@ -289,9 +310,9 @@
 
 	<!-- Messi, MESSI, LM10, messi, LIONEL MESSI, lionel messi, Lionel Messi -->
 	<category>
-	     <pattern>MESSI</pattern>
+		 <pattern>MESSI</pattern>
 		 <template>
-		     MELHOR JOGADOR DO MUNDO E DA HISTORIA ET, LM10 ❤️
+			 MELHOR JOGADOR DO MUNDO E DA HISTORIA ET, LM10 ❤️
 		</template>
 	</category>		 
 
