@@ -57,14 +57,15 @@ Data: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}
             start = InlineKeyboardMarkup(inline_keyboard=[
                 [dict(text='🧠 Canal', url='https://t.me/git_paulostationbr')]+
                 [dict(text='👤 Facebook', url='https://facebook.com/paulostationbr')],
-                [dict(text='👨🏻‍💻 Grupo', url='https://t.me/IfunnyBr')]+
-                [dict(text='ADD a Um Grupo', url='https://t.me/git_paulostationbr')]
+                [dict(text='👨🏻‍💻 Grupo', url='https://t.me/IfunnyBr')],
+                [dict(text='ADD a Um Grupo', url='https://t.me/PauloBetaBot?startgroup')]
             ])
-            bot.sendMessage(msg['chat']['id'], f'''𝐎𝐥𝐚́ {msg["from"]["first_name"]}!
-👋😇 𝐏𝐫𝐚𝐳𝐞𝐫 𝐞𝐦 𝐜𝐨𝐧𝐡𝐞𝐜𝐞̂-𝐥𝐨(𝐚), 𝐌𝐞𝐮 𝐧𝐨𝐦𝐞 𝐞́ 𝐏𝐚𝐮𝐥𝐨 𝐬𝐨𝐮 𝐮𝐦 𝐜𝐡𝐚𝐭𝐛𝐨𝐭, 𝐨 𝐪𝐮𝐞 𝐮𝐦 𝐜𝐡𝐚𝐭 𝐛𝐨𝐭 𝐟𝐚𝐳?
-𝐔𝐦 𝐜𝐡𝐚𝐭𝐛𝐨𝐭 𝐩𝐨𝐝𝐞 𝐢𝐧𝐭𝐞𝐫𝐚𝐠𝐢𝐫 𝐧𝐨𝐫𝐦𝐚𝐥𝐦𝐞𝐧𝐭𝐞 𝐜𝐨𝐦 𝐨𝐬 𝐮𝐬𝐮𝐚́𝐫𝐢𝐨𝐬 𝐝𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐞 𝐨𝐮𝐭𝐫𝐚𝐬 𝐩𝐥𝐚𝐭𝐚𝐟𝐨𝐫𝐦𝐚𝐬!
-𝐎𝐛𝐫𝐢𝐠𝐚𝐝𝐨 𝐚 𝐞𝐪𝐮𝐢𝐩𝐞 𝐝𝐚 𝐚𝐦𝐚𝐧𝐨𝐭𝐞𝐚𝐦.𝐜𝐨𝐦 𝐩𝐨𝐫 𝐭𝐞𝐫 𝐦𝐞 𝐝𝐚𝐝𝐨 𝐚 𝐯𝐢𝐝𝐚 𝐚𝐪𝐮𝐢 𝐧𝐨 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦,
-𝐦𝐚𝐬 𝐪𝐮𝐞𝐦 𝐦𝐞 𝐜𝐫𝐢𝐨𝐮 𝐦𝐞𝐬𝐦𝐨 𝐟𝐨𝐢 𝐨 @𝐏𝐚𝐮𝐥𝐨𝐒𝐭𝐚𝐭𝐢𝐨𝐧𝐁𝐫𝐁𝐨𝐭 𝐧𝐨́ 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤''', reply_markup=start, reply_to_message_id=msg['message_id'])
+            bot.sendMessage(msg['chat']['id'], f'''Olá {msg["from"]["first_name"]}!
+👋😇 Prazer em conhêce - lo, meu nome é Paulo! Sou uma IA que gosta de interagir com os membros do grupo
+
+Fui desenvolvido Pela equipe AmanoTeam. Mas quem me deu a vida no Facebook Foi o @pnzdga
+
+ah adcione o @trdgroupsbot no seu grupo! esse bot az ranking de mensagens em seu grupo e envia no canal @trdgroups''', reply_markup=start, reply_to_message_id=msg['message_id'])
 
 
         elif msg['text'].lower() == '/eu':
