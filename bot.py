@@ -25,7 +25,7 @@ logging.basicConfig(format='%(asctime)s -  %(levelname)s - %(message)s',
 
 
 def send_to_channel(msg):
-    bot.sendMessage(channel_name, msg)
+    bot.sendMessage(channel_name, msg, parse_mode="HTML")
 
 
 def handle_thread(*args):
@@ -38,9 +38,9 @@ def handle(msg):
 
         msg_info = f'''
 ----------------------------------------------
-Usuário {msg["from"]["first_name"]} usou PauloBot!
-Id: {msg['from']['id']},
-Nome de Usuário: {msg["from"].get("username", "nenhum")},
+Usuário <b>{msg["from"]["first_name"]}</b> usou PauloBot!
+Id: <a href="tg://user?id={msg['from']['id']}">Privado</a>,
+Nome de Usuário: @{msg["from"].get("username", "@")},
 Conteúdo: {msg['text']}
 Data: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}
 ----------------------------------------------'''
@@ -58,7 +58,7 @@ Data: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}
                 [dict(text='🧠 Canal', url='https://t.me/git_paulostationbr')]+
                 [dict(text='👤 Facebook', url='https://facebook.com/paulostationbr')],
                 [dict(text='👨🏻‍💻 Grupo', url='https://t.me/IfunnyBr')],
-                [dict(text='ADD a Um Grupo', url='https://t.me/PauloBetaBot?startgroup')]
+                [dict(text='ADD a Um Grupo', callback_data='/eu')]
             ])
             bot.sendMessage(msg['chat']['id'], f'''Olá {msg["from"]["first_name"]}!
 👋😇 Prazer em conhêce - lo, meu nome é Paulo! Sou uma IA que gosta de interagir com os membros do grupo
@@ -122,7 +122,7 @@ Idioma: {}'''.format(msg['from']['first_name'] + (
 <a href="https://t.me/ifunnybr">IfunnyBr :)</a>
 
 
-<b>Para adiconar seu grupo fale com</b> <a href="tg://userid?945971280">PauloStationBr </a>
+<b>Para adiconar seu grupo fale com</b> <a href="tg://user?id=945971280">PauloStationBr </a>
 ''', parse_mode="HTML", reply_to_message_id=msg['message_id'], disable_web_page_preview=True)
 
         elif msg['text'].lower().startswith('/suporte '):
@@ -151,8 +151,8 @@ Mensagem: {msg['text']}'''
                 [dict(text='👤 Facebook', url='https://facebook.com/paulostationbr')]+
                 [dict(text='👨🏻‍💻 Grupo', url='https://t.me/Paulo_Group')]
         ])
-        bot.sendMessage(msg["chat"]["id"], "<b>Olá! seja bem vindo ao melhor grupo, diga olá para que eu possa interagir com você :)</b>", parse_mode="HTML", reply_markup=start, reply_to_message_id=msg['message_id'])
+        bot.sendMessage(msg["chat"]["id"], """<b>Olá!</b> <a href="tg://user?id={msg['from']['id']}">{msg["from"]["first_name"]}</a> <b>seja bem vindo ao melhor grupo, diga olá para que eu possa interagir com você :)</b>""", parse_mode="HTML", reply_markup=start, reply_to_message_id=msg['message_id'])
 
-print('Paulo Online\nby AmanoTeam.com!')
+print('Paulo Online\nby OZN Devs!')
 
 MessageLoop(bot, handle_thread).run_forever()
