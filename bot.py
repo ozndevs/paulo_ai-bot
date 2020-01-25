@@ -18,14 +18,14 @@ bot = amanobot.Bot(token)
 k = aiml.Kernel()
 k.learn('aiml/*.aiml')
 
-channel_name = '@logsps'
+channel_id = -1001405843234
 
 logging.basicConfig(format='%(asctime)s -  %(levelname)s - %(message)s',
                     level=logging.INFO)
 
 
 def send_to_channel(msg):
-    bot.sendMessage(channel_name, msg, parse_mode="HTML")
+    bot.sendMessage(channel_id, msg, parse_mode="HTML")
 
 
 def handle_thread(*args):
