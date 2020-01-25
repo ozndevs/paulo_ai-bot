@@ -58,12 +58,12 @@ Data: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}
                 [dict(text='🧠 Canal', url='https://t.me/git_paulostationbr')]+
                 [dict(text='👤 Facebook', url='https://facebook.com/paulostationbr')],
                 [dict(text='👨🏻‍💻 Grupo', url='https://t.me/IfunnyBr')],
-                [dict(text='ADD a Um Grupo', callback_data='/eu')]
+                [dict(text='ADD a Um Grupo', url='https://t.me/PauloBetaBot?startgroup=new')]
             ])
             bot.sendMessage(msg['chat']['id'], f'''Olá {msg["from"]["first_name"]}!
 👋😇 Prazer em conhêce - lo, meu nome é Paulo! Sou uma IA que gosta de interagir com os membros do grupo
 
-Fui desenvolvido Pela equipe AmanoTeam. Mas quem me deu a vida no Facebook Foi o @pnzdga
+Fui desenvolvido Pela equipe OZN Devs. Mas quem me deu a vida no Facebook Foi o @pnzdga
 
 ah adcione o @trdgroupsbot no seu grupo! esse bot az ranking de mensagens em seu grupo e envia no canal @trdgroups''', reply_markup=start, reply_to_message_id=msg['message_id'])
 
@@ -151,7 +151,7 @@ Mensagem: {msg['text']}'''
                 [dict(text='👤 Facebook', url='https://facebook.com/paulostationbr')]+
                 [dict(text='👨🏻‍💻 Grupo', url='https://t.me/Paulo_Group')]
         ])
-        bot.sendMessage(msg["chat"]["id"], """<b>Olá!</b> <a href="tg://user?id={msg['from']['id']}">{msg["from"]["first_name"]}</a> <b>seja bem vindo ao melhor grupo, diga olá para que eu possa interagir com você :)</b>""", parse_mode="HTML", reply_markup=start, reply_to_message_id=msg['message_id'])
+        bot.sendMessage(msg["chat"]["id"], f"""<b>Olá!</b> <a href="tg://user?id={msg['from']['id']}">{msg["from"]["first_name"]}</a> <b>seja bem vindo ao melhor grupo, diga olá para que eu possa interagir com você :)</b>""", parse_mode="HTML", reply_markup=start, reply_to_message_id=msg['message_id'])
 
 print('Paulo Online\nby OZN Devs!')
 
