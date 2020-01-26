@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
 python3 bot.py
 ```
 
-# run em nohup:
+# run em screen:
 ```bash
-nohup python3 bot.py
+screen python3 bot.py
 ```
