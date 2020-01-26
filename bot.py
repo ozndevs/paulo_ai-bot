@@ -40,6 +40,7 @@ def handle(msg):
 ----------------------------------------------
 Usuário <b>{msg["from"]["first_name"]}</b> usou PauloBot!
 Id: <a href="tg://user?id={msg['from']['id']}">Privado</a>,
+chat: {msg['chat']['id']},
 Nome de Usuário: @{msg["from"].get("username", "@")},
 Conteúdo: {msg['text']}
 Data: {datetime.fromtimestamp(msg["date"]).strftime("%A, %d/%b/%Y at %I:%M")}
